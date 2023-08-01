@@ -5,5 +5,13 @@ module.exports = {
 	once: true,
 	execute(client) {
 		console.log(`Ready! Logged in as ${client.user.tag}`);
+
+		client.user.setPresence({
+			activity: {
+			  name: 'Simple Roleplay',
+			  type: 'PLAYING',
+			},
+			status: 'online',
+		  });
 	},
 };
