@@ -1,7 +1,7 @@
 const Discord = require("discord.js");
-const { commandeCategoryID } = require("../config.json");
-const { commandeArchiveCategoryID } = require("../config.json");
-const { joueurRoleID } = require("../config.json");
+const { commandeCategoryID } = require("../../config.json");
+const { commandeArchiveCategoryID } = require("../../config.json");
+const { joueurRoleID } = require("../../config.json");
 
 module.exports = {
   name: Discord.Events.InteractionCreate,

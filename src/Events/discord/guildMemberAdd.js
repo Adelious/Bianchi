@@ -1,7 +1,7 @@
 const { Events, ChannelType, EmbedBuilder, Colors, ButtonBuilder, ActionRowBuilder, ButtonStyle } = require("discord.js");
 const axios = require("axios");
-const { welcomeChannelID } = require("../config.json");
-const { commandeCategoryID } = require("../config.json");
+const { welcomeChannelID } = require("../../config.json");
+const { commandeCategoryID } = require("../../config.json");
 
 module.exports = {
   name: Events.GuildMemberAdd,
