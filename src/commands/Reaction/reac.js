@@ -5,6 +5,7 @@ module.exports = {
     .setName("verif")
     .setDescription("Envoie du bouton de verif"),
   async execute(interaction) {
+    if (!interaction.guild.members.cache.get(interaction.user.id).permissions.has(PermissionFlagsBits.Administrator)) return interaction.reply({content: 'Vous ne pouvez pas utiliser cette commande', ephemeral: true});
     const button = new ActionRowBuilder().addComponents(
       new ButtonBuilder()
         .setCustomId("verif")

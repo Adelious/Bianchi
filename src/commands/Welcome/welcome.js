@@ -7,6 +7,8 @@ module.exports = {
     .setName("welcome")
     .setDescription("set the welcome channel"),
   async execute(interaction) {
+    if (!interaction.guild.members.cache.get(interaction.user.id).permissions.has(PermissionFlagsBits.Administrator)) return interaction.reply({content: 'Vous ne pouvez pas utiliser cette commande', ephemeral: true});
+
     const filePath = path.join(__dirname, "../../config.json");
     const data = fs.readFileSync(filePath);
     const json = JSON.parse(data);
