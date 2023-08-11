@@ -1,4 +1,7 @@
 # Bianchi Bot
+
+Message à Erico
+
 **Bianchi Bot** est un bot discord developpé en javascript utilisé pour la **Bianchi**, une organisation au sein du serveur RP Gmod **Simple Roleplay**
 ## Comment télécharger le bot ?
 1. **Télécharger** le fichier https://github.com/Adelious/Bianchi/tree/main
