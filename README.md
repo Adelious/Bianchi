@@ -20,3 +20,6 @@ Message à Erico
 ## Informations non essentiel
 - La raison pour laquelle il n'y a pas le `.env` c'est parce que c'est des fichiers sensible, si quelqu'un tombe dessus, il peut prendre le contrôle du bot ( qui a des permissions administrateurs sur ton serveur, et donc complètement le détruire, vaut miuex ne pas jouer avec ça et jouer la sécurité. )
 - En cas d'erreur, contacte moi !
+
+⚠ - Quand tu as tout fini, il faut d'abord lancer le `Startup.exe` pour télécharger toutes les dépendances, ensuite, tu peux lancer le `Start.exe`
+⚠ - 11/08 le load-slash-command.exe ne marche pas, il faut entrer dans l'editeur `vscode` pour que ca marche
