@@ -24,6 +24,7 @@ module.exports = {
         if (name && name.trim() !== '') {
           member.setNickname(name, 'Renamed');
           nom = name;
+          console.log(`${member.user.username} a rejoint le serveur et à été nommé ${name}.`)
         } else {
           member.setNickname('Pas de nom RP.', 'Renamed');
         }
@@ -77,6 +78,8 @@ module.exports = {
 
       ticketChannel.send(`Ticket automatique ouvert. \nJe ne parviens pas a assigner le nom et prénom de <@${member.user.id}> !`);
     }
+
+    console.log(`${member.user.username} a rejoint le serveur mais n'a pas pu être nommé.`)
 
     // Message de bienvenue 
     if(welcomeChannelID !== "") {

@@ -100,6 +100,7 @@ module.exports = {
         if (!interaction.member.roles.cache.has(joueurRoleID)) {
           await interaction.member.roles.add(joueurRoleID);
 
+          await console.log("Validation du règlement et attribution du rôle joueur pour " + (interaction.member.nickname === "null" ? interaction.member.nickname : interaction.user.username ))
           await interaction.reply({
             content: "Vous venez d'être verifié",
             ephemeral: true,
