@@ -100,7 +100,7 @@ module.exports = {
         if (!interaction.member.roles.cache.has(joueurRoleID)) {
           await interaction.member.roles.add(joueurRoleID);
 
-          await console.log("Validation du règlement et attribution du rôle joueur pour " + (interaction.member.nickname === "null" ? interaction.member.nickname : interaction.user.username ))
+          await console.log("Validation du règlement et attribution du rôle joueur pour " + (interaction.member.nickname !== "null" ? interaction.member.nickname : interaction.user.username ))
           await interaction.reply({
             content: "Vous venez d'être verifié",
             ephemeral: true,
@@ -118,7 +118,7 @@ module.exports = {
       if (interaction.customId === "candidature") {
 
         let channel = await interaction.guild.channels.create({
-          name: `candidature-${interaction.member.nickname.replace(' ', '-')}`,
+          name: `candidature-${(interaction.member.nickname !== "null" ? interaction.member.nickname.replace(' ', '-') : interaction.user.username )}`,
           type: Discord.ChannelType.GuildText,
         });
 
