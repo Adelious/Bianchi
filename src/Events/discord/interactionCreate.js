@@ -118,7 +118,7 @@ module.exports = {
       if (interaction.customId === "candidature") {
 
         let channel = await interaction.guild.channels.create({
-          name: `candidature-${(interaction.member.nickname !== "null" ? interaction.member.nickname.replace(' ', '-') : interaction.user.username )}`,
+          name: `candidature-${(interaction.member.nickname !== null) ? interaction.member.nickname.replace(' ', '-') : interaction.user.username }`,
           type: Discord.ChannelType.GuildText,
         });
 
