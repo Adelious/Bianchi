@@ -165,7 +165,7 @@ module.exports = {
 
         await channel.send({ embeds: [embed], components: [button] });
 
-        channel.send('➔ ** Informations**\n- Nom :\n- Prénom :\n- Âge :\n\n- Temps de jeu ( screenshot à l\'appui ) :\n- Image de vos avertissements ( screenshot à l\'appui ) :\n- Disponibilité :\n- Qualité / Défauts :\n\n➔ ** Candidature **\n- Motivations:\n- Pourquoi la Bianchi et pas une autre ? :\n- Pourquoi vous choisir ? :\n- Que représente la Bianchi pour vous ? :\n\n➔ **Information(s) supplémentaire(s) ** :\n- Description de vous ( attitude / conduite / comportement ... ) :')
+        channel.send('➔ ** Informations**\n- Nom :\n- Prénom :\n- Âge :\n\n- Temps de jeu (Minimum 100h)( screenshot à l\'appui ) :\n- Image de vos avertissements ( screenshot à l\'appui ) :\n- Disponibilité :\n- Qualité / Défauts :\n\n➔ ** Candidature **\n- Motivations:\n- Pourquoi la Bianchi et pas une autre ? :\n- Pourquoi vous choisir ? :\n- Que représente la Bianchi pour vous ? :\n\n➔ **Information(s) supplémentaire(s) ** :\n- Description de vous ( attitude / conduite / comportement ... ) :')
       }
 
       if (interaction.customId === "close-recrutement") {
@@ -184,9 +184,6 @@ module.exports = {
 
         await interaction.channel.setParent(recrutementArchiveCategoryID);
       }
-
-
-
     }
   },
 };
