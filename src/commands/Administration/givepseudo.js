@@ -49,9 +49,7 @@ module.exports = {
         }
       } catch (error) {
         await console.error(
-          await member.user.id + " | " + member.user.username + " | Error occurred while fetching data from the API : L'utilisateur n'a pas d'identifiants discord associé ou ",
-          error
-        );
+          await member.user.id + " | " + member.user.username + " | Error occurred while fetching data from the API : L'utilisateur n'a pas d'identifiants discord associé ou ");
       }
     });
 
